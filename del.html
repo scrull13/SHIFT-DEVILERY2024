@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shift</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="ico"
+      href="/styles/icon/shift-high-resolution-logo.ico"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <img src="/styles/img/shift-high-resolution-logo.png" alt="Логотип" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Профиль</a>
+          </li>
+          <li>
+            <a href="#">История</a>
+          </li>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <div class="content left-content">
+          <img
+            src="/styles/img/shift-high-resolution-logo.png"
+            alt="Delivery Image"
+          />
+        </div>
+        <div class="content right-content">
+          <h2>Рассчитать доставку</h2>
+          <div class="deliveryDiv">
+            <form id="senderForm">
+              <label for="fromCity">Город отправки:</label>
+              <select id="fromCity" name="fromCity"></select>
+            </form>
+            <form id="receiverForm">
+              <label for="toCity">Город назначения:</label>
+              <select id="toCity" name="toCity"></select>
+            </form>
+            <form id="packageSizeForm">
+              <label for="packageSize">Размер посылки:</label>
+              <select id="packageSize" name="packageSize" required></select>
+            </form>
+            <button class="btn-356" type="button" onclick="calculateDelivery()">
+              Рассчитать
+            </button>
+            <div id="resultContainer" class="resultContainer"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
